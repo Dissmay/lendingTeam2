@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="favicon.png">
-    <title> Главная </title>
+    <title> card </title>
     <link rel="stylesheet" href="./css/styles.css">
     <!-- HTML5 shim and Respond.js-->
     <!-- [if lt IE 9]>
@@ -16,57 +16,37 @@
 	<! [endif]-->
   </head>
   <body>
-    <h1> Главная <br> Hello, world! <a href="another_page.html">Link to another page</a>
-      <span>Icon</span>
-    </h1>
-    <ul>
-      <li>
-        <h3>Eldar</h3>
-        <p>123</p>
-        <img src="/img/eldar.jpg" alt="Eldar">
-      </li>
-      <li>
-        <h3>Dima</h3>
-        <p>254</p>
-        <img src="/img/dima.jpg" alt="Dima">
-      </li>
-      <li>
-        <h3>Petya</h3>
-        <p>254</p>
-        <img src="/img/dima.jpg" alt="Petya">
-      </li>
-    </ul>
-    <ul>
-      <li>User: Eldar</li>
-      <li>User: Dima</li>
-      <li>User: Lilya</li>
-      <li>User: Petya</li>
-      <li>User: Vasy</li>
-      <li>User: Katya</li>
-      <li>User: Dasha</li>
-      <li>User: Yulia</li>
-    </ul>
-    <div class="block mod">
-      <h2>Hello world!</h2>
-      <div class="block-item">
-        <span id="item">I'm item! <span class="selec"> hey</span>
-        </span>
-      </div>
+    <div class="container gradient">
+      <main class="main">
+        <h1 class="main_colortext">Что говорят о нас клиенты?</h1>
+        <div class="feedback clearfix">
+          <div class="feedback_card">
+            <img src="img/card1.png" alt="face1" class="feedback_card_face">
+            <h2 class="feedback_card_text">Денис Булгаков</h2>
+            <p class="feedback_card_text1_1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, et eaque. Eligendi rem illum magni nostrum deleniti est, iste, sit, quos distinctio inventore in. Soluta temporibu s ipsum asper iores dolorem ex . </p>
+            <p class="feedback_card_text1_2"><time>30.04.2019</time></p>
+          </div>
+          <div class="feedback_card">
+            <img src="img/card2.png" alt="face1" class="feedback_card_face">
+            <h2 class="feedback_card_text">Андрей Фёдоров</h2>
+            <p class="feedback_card_text1_1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, et eaque. Eligendi rem illum magni nostrum deleniti est, iste, sit, quos distinctio inventore in. Soluta temporibu s ipsum asper iores dolorem ex . </p>
+            <p class="feedback_card_text1_2"><time>24.08.2018</time></p>
+          </div>
+          <div class="feedback_card">
+            <img src="img/card3.png" alt="face1" class="feedback_card_face">
+            <h2 class="feedback_card_text">Антон Петров</h2>
+            <p class="feedback_card_text1_1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, et eaque. Eligendi rem illum magni nostrum deleniti est, iste, sit, quos distinctio inventore in. Soluta temporibu s ipsum asper iores dolorem ex . </p>
+            <p class="feedback_card_text1_2"><time>12.05.2018</time></p>
+          </div>
+          <div class="feedback_card">
+            <img src="img/card4.png" alt="face1" class="feedback_card_face">
+            <h2 class="feedback_card_text">Виктор Ткаченко</h2>
+            <p class="feedback_card_text1_1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, et eaque. Eligendi rem illum magni nostrum deleniti est, iste, sit, quos distinctio inventore in. Soluta temporibu s ipsum asper iores dolorem ex . </p>
+            <p class="feedback_card_text1_2"><time>12.01.2018</time></p>
+          </div>
+        </div>
+      </main>
     </div>
-    <div class="filter">
-      <form action="#" class="filter__form">
-        <input type="text" class="filter__input">
-        <button class="filter__btn">Отправить</button>
-        <button class="filter__btn filter__btn_cancel">Отменить</button>
-      </form>
-    </div>
-    <div class="container">
-      <div class="colored-block">MODAL</div>
-    </div>
-    <div class="container">
-      <div class="colored-block2">MODAL</div>
-    </div>
-    <h5> I'm footer </h5>
     <script src="./js/js.js"></script>
   </body>
 </html>

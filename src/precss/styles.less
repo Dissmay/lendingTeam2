@@ -5,122 +5,76 @@
 *{
 	margin: 0;
 	padding: 0;
-}
-
-@some: 50px;
-
-.block{
-	background-color: @color_text;
-	color: green;
-
-	.block-item{
-		font-size: @some;
-
-		#item{
-			@some: 20px;
-			color: crimson;
-			font-size: @some;
-			.selec{
-				font-size: @sizes[lg];
-			}
-		}
-	}
-}
-
-.selec{
-	font-size: 20px !important;
-}
-
-.selec{
-	font-size: 35px !important;
-}
-
-
-
-.block{
-	color: @colors[text];
-	background-color: @colors[background];
-
-	&:before{
-		content: 'Im PSEUDO before!';
-	}
-
-	&.mod{
-		background-color: @colors[some];
-	}
-
-}
-
-.filter{
-	padding: @sizes[md];
-	
-	&__input{
-		border: 2px solid red;
-		display: block;
-		margin-bottom: 20px;
-	}
-
-	&__btn{
-		background-color: cyan;
-		padding: 5px 10px;
-		border-radius: 20px;
-
-		&:hover{
-			background-color: darken(cyan, 30%);
-		}
-
-		&_cancel{
-			background-color: @colors[text];
-			color: #fff;
-			&:hover{
-				background-color: lighten(@colors[text], 20%);
-			}
-		}
-
-
-	}
-
+	overflow: visible;
 }
 
 .container{
-	margin: 20px 0;
-	height: 800px;
-	background-color: #999;
-	position: relative;
-	.colored-block{
-		@width: 273px;
-		@height: 155px;
-		width: @width;
-		height: @height;
-		background-color: cyan;
-
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		margin-top: -( @height / 2 );
-		margin-left: -( @width / 2 );
+	padding-top: 184px;
+}
+.gradient {
+	background: linear-gradient(to top right, #267ebe, #6dd5ed);
 		
+}
+.main{
+	width: 1200px;
+	margin: 0 auto;
+	
+	&_colortext{
+		color: #ffffff;
+		margin-bottom: 80px;
+		font-size: 60px
 	}
 
-	.colored-block2{
-		background-color: red;
-		width: 500px;
-		height: 220px;
-		.center(500px, 220px);
-		.mixin();
+}
+.clearfix::before,
+.clearfix::after{
+	content: '';
+	display: table;
+	clear: both;
+
+}
+.feedback{
+
+	&_card{
+		float: left;
+		width: 372px;
+		height: 510px;
+		background-color: #ffffff;
+		border-radius: 10px;
+		margin-bottom: 45px;
+		
+		& + &{
+			margin-left: 20px;
+			
+			
+
+		}
+
+		&:nth-child(4){
+			margin-left: 0;
+		}
+
+		&_face{
+			margin: 68px 0 0 28px;
+			
+		}
+		&_text{
+			margin-left: 33px;
+		}
+		&_text1_2{
+			margin-left: 33px;
+		}
+
+		&_text1{
+			margin: 33px 40px 0 35px;
+		
+
+		}
+		&_text1_1{
+			margin: 24px 40px 0 35px;
+			font-weight: 500;
+			margin-bottom: 36px;
+		}
 	}
 }
 
-/*
-
-lighten(color1, %); - делает цвет светлее на %
-darken(color, %); - делает темнее
-sqrt(int) - находит корень квадратный из числа
-abs(int) - возвращает модуль числа
-sin(deg)
-cos(deg)
-pi() - возвращает число 3.14....
-pow(int, pow) - возносит int в степень pow, pow(3, 2) - 3*3 = 9
-
-
-*/

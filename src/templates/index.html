@@ -7,7 +7,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<link rel="shortcut icon" href="favicon.png">
-	<title> Главная </title>
+	<title> card	 </title>
 	<link rel="stylesheet" href="./css/styles.css">
 
 	<!-- HTML5 shim and Respond.js-->
@@ -18,76 +18,66 @@
 
 </head>
 <body>
+	<div class="container gradient">
+		<main class="main">
+			<h1 class="main_colortext">Что говорят о  нас клиенты?</h1>
+			<div class="feedback clearfix">
+				<div class="feedback_card">
+					<img src="img/card1.png" alt="face1" class="feedback_card_face">
+					<h2 class="feedback_card_text">Денис Булгаков</h2>
+					<p class="feedback_card_text1_1">Lorem ipsum, dolor sit amet consectetur 
+						adipisicing elit. Adipisci, et eaque. Eligendi rem illum magni nostrum deleniti est, iste, sit, quos 
+						distinctio inventore in. Soluta temporibu
+						s ipsum asper
+						iores dolorem ex
+						.
+					
+					</p>
+					<p class="feedback_card_text1_2"><time>30.04.2019</time></p>
+				</div>
+				<div class="feedback_card">
+						<img src="img/card2.png" alt="face1" class="feedback_card_face">
+						<h2 class="feedback_card_text">Андрей Фёдоров</h2>
+						<p class="feedback_card_text1_1">Lorem ipsum, dolor sit amet consectetur 
+							adipisicing elit. Adipisci, et eaque. Eligendi rem illum magni nostrum deleniti est, iste, sit, quos 
+							distinctio inventore in. Soluta temporibu
+							s ipsum asper
+							iores dolorem ex
+							.
+						
+						</p>
+						<p class="feedback_card_text1_2"><time>24.08.2018</time></p>
+				</div>
+				<div class="feedback_card">
+						<img src="img/card3.png" alt="face1" class="feedback_card_face">
+						<h2 class="feedback_card_text">Антон Петров</h2>
+						<p class="feedback_card_text1_1">Lorem ipsum, dolor sit amet consectetur 
+							adipisicing elit. Adipisci, et eaque. Eligendi rem illum magni nostrum deleniti est, iste, sit, quos 
+							distinctio inventore in. Soluta temporibu
+							s ipsum asper
+							iores dolorem ex
+							.
+						
+						</p>
+						<p class="feedback_card_text1_2"><time>12.05.2018</time></p>
+				</div>
+				<div class="feedback_card">
+						<img src="img/card4.png" alt="face1" class="feedback_card_face">
+						<h2 class="feedback_card_text">Виктор Ткаченко</h2>
+						<p class="feedback_card_text1_1">Lorem ipsum, dolor sit amet consectetur 
+							adipisicing elit. Adipisci, et eaque. Eligendi rem illum magni nostrum deleniti est, iste, sit, quos 
+							distinctio inventore in. Soluta temporibu
+							s ipsum asper
+							iores dolorem ex
+							.
+						
+						</p>
+						<p class="feedback_card_text1_2"><time>12.01.2018</time></p>
+				</div>
 
-{% set title = 'Главная' %}
-{% set link = 'another_page.html' %}
-
-{% set users = ['Eldar', 'Dima', 'Lilya', 'Petya', 'Vasy', 'Katya', 'Dasha', 'Yulia'] %}
-
-{% set usersData = [
-		{
-			name: 'Eldar',
-			id: 123,
-			src: '/img/eldar.jpg'
-		},
-		{
-			name: 'Dima',
-			id: 254,
-			src: '/img/dima.jpg'
-		},
-		{
-			name: 'Petya',
-			id: 254,
-			src: '/img/dima.jpg'
-		}
-	] %}
-
-{% include '_header.html' %}
-
-<ul>
-	{% for info in usersData %}
-	<li>
-		<h3>{{ info.name }}</h3>
-		<p>{{ info.id }}</p>
-		<img src="{{ info.src }}" alt="{{ info.name }}">
-	</li>
-	{% endfor %}
-</ul>
-
-<ul>
-	{% for user in users %}
-	<li>User: {{ user }}</li>
-	{% endfor %}
-</ul>
- 
-<div class="block mod">
-	<h2>Hello world!</h2>
-	<div class="block-item">
-		<span id="item">I'm item!
-			<span class="selec"> hey</span>
-		</span>
+			</div>
+		</main>
 	</div>
-</div>
-
-<div class="filter">
-	<form action="#" class="filter__form">
-		<input type="text" class="filter__input">
-		<button class="filter__btn">Отправить</button>
-		<button class="filter__btn filter__btn_cancel">Отменить</button>
-	</form>
-</div>
-
-<div class="container">
-	<div class="colored-block">MODAL</div>
-</div>
-
-<div class="container">
-	<div class="colored-block2">MODAL</div>
-</div>
-
-
-{% include '_footer.html' %}
-
 <script src="./js/js.js"></script>
 </body>
 </html>
