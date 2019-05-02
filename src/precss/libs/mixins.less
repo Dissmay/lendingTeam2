@@ -8,6 +8,14 @@
 	margin-left: -( @w / 2 );
 }
 
+.float(){
+	.clearfix::before,
+	.clearfix::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+}
 
 
 .mixin(){
