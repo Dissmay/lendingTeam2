@@ -6,8 +6,76 @@
 	margin: 0;
 	padding: 0;
 	overflow: visible;
+	box-sizing: border-box;
+	
+}
+.wrapper{
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 22px;
+}
+.img{
+	background: url(../img/Fon.jpg) no-repeat;
+	background-size: cover;
+	min-height: 100vh;
 }
 
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding-top: 48px;
+	min-height: 100px;
+	
+
+		.center{
+			display: inline-block;
+			min-width: 30px;
+			max-width: 100%;
+
+		}
+		.logotype{
+			margin-right: 100%;
+			margin-right: calc( 100% - 760px);
+			width: 107px;
+			font-weight: bold;
+		}
+		.btn{
+			position: relative;
+			text-decoration: #97c89a;
+			color: black;
+			margin: 0 0 6px 20px;
+			font-weight: bold;
+		
+			&:hover{
+				&:after{
+					content: '';
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 100%;
+					border-bottom: 1px solid #97c89a;
+
+				}
+				
+				}	
+			
+			&:nth-child(1){
+				padding: 0;
+			}
+			&:nth-child(5){
+				margin: 0 0 0 53px;
+			}
+		}
+		
+		
+
+		
+
+		
+
+}
 .container{
 	padding-top: 184px;
 }
