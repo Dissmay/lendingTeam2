@@ -10,7 +10,7 @@
 	
 }
 .wrapper{
-	width: 1200px;
+	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 22px;
 }
@@ -76,68 +76,60 @@ header{
 		
 
 }
-.container{
+.main{
 	padding-top: 184px;
 }
 .gradient {
 	background: linear-gradient(to top right, #267ebe, #6dd5ed);
 		
 }
-.main{
-	width: 1200px;
+.wrapper{
+	max-width: 1200px;
 	margin: 0 auto;
 	
-	&_colortext{
+	
+	
+	.main_colortext{
 		color: #ffffff;
 		margin-bottom: 80px;
 		font-size: 60px
 	}
 
 }
-.clearfix::before,
-.clearfix::after{
-	content: '';
-	display: table;
-	clear: both;
 
-}
 .feedback{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 
-	&_card{
-		float: left;
-		width: 372px;
-		height: 510px;
+	&-card{
+		
+		width: 372px;	
 		background-color: #ffffff;
 		border-radius: 10px;
 		margin-bottom: 45px;
-		
-		& + &{
-			margin-left: 20px;
-			
-			
-
-		}
+		padding-top: 50px;
+		padding: 0 33px;
+		padding-bottom: 75px;
 
 		&:nth-child(4){
 			margin-left: 0;
-		}
-
-		&_face{
-			margin: 68px 0 0 28px;
+			flex-shrink: 0;
 			
 		}
-		&_text{
-			margin-left: 33px;
+
+		&__face{
+			margin: 68px 0;
+			
 		}
-		&_text1_1{
-			margin: 24px 40px 0 35px;
+	
+		&__text{
+			margin: 24px 40px 0 0;
 			font-weight: 500;
 			margin-bottom: 36px;
 		}
 
-		&_text1_2{
-			margin-left: 33px;
-		}
+		
 
 		
 		
