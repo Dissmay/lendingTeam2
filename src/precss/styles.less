@@ -10,6 +10,8 @@
 	
 }
 .wrapper{
+	display: flex;
+	justify-content:space-between;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 22px;
@@ -30,20 +32,13 @@ header{
 	
 
 		.center{
-			display: inline-block;
-			min-width: 30px;
-			max-width: 100%;
-
 		}
 		.logotype{
-			margin-right: 100%;
-			margin-right: calc( 100% - 760px);
-			width: 107px;
 			font-weight: bold;
 		}
 		.btn{
 			position: relative;
-			text-decoration: #97c89a;
+			text-decoration: none;
 			color: black;
 			margin: 0 0 6px 20px;
 			font-weight: bold;
@@ -52,6 +47,8 @@ header{
 				&:after{
 					content: '';
 					position: absolute;
+		
+
 					bottom: 0;
 					left: 0;
 					width: 100%;
@@ -59,7 +56,7 @@ header{
 
 				}
 				
-				}	
+			}	
 			
 			&:nth-child(1){
 				padding: 0;
@@ -76,6 +73,7 @@ header{
 		
 
 }
+
 .main{
 	padding-top: 184px;
 }
@@ -83,40 +81,41 @@ header{
 	background: linear-gradient(to top right, #267ebe, #6dd5ed);
 		
 }
-.wrapper{
+.wrapper1{
 	max-width: 1200px;
 	margin: 0 auto;
+	max-width: 1200px;
+	padding: 0 22px;
 	
-	
-	
+
 	.main_colortext{
 		color: #ffffff;
 		margin-bottom: 80px;
-		font-size: 60px
+		font-size: 60px;
+		
 	}
 
 }
+.my-row{
+	.row-flex();
+}
 
 .feedback{
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+
 
 	&-card{
-		
-		width: 372px;	
+		min-width: 372px;	
 		background-color: #ffffff;
 		border-radius: 10px;
 		margin-bottom: 45px;
 		padding-top: 50px;
 		padding: 0 33px;
 		padding-bottom: 75px;
-
-		&:nth-child(4){
-			margin-left: 0;
-			flex-shrink: 0;
-			
-		}
+		.col();
+		.size(4);
+		.size-md(4);
+		.size-sm(6);
+		.size-xs(10);
 
 		&__face{
 			margin: 68px 0;
@@ -128,11 +127,7 @@ header{
 			font-weight: 500;
 			margin-bottom: 36px;
 		}
-
-		
-
-		
-		
 	}
 }
+
 
