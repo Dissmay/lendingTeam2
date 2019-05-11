@@ -9,12 +9,18 @@
 	box-sizing: border-box;
 	
 }
+img{
+	max-width: 100%;
+	height: auto;
+}
+
 .wrapper{
-	display: flex;
-	justify-content:space-between;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 22px;
+	.wrapper();
+}
+.header-navigation{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 .img{
 	background: url(../img/Fon.jpg) no-repeat;
@@ -22,7 +28,7 @@
 	min-height: 100vh;
 }
 
-header{
+.header{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -31,80 +37,65 @@ header{
 	min-height: 100px;
 	
 
-		.center{
-		}
-		.logotype{
-			font-weight: bold;
-		}
-		.btn{
-			position: relative;
-			text-decoration: none;
-			color: black;
-			margin: 0 0 6px 20px;
-			font-weight: bold;
-		
-			&:hover{
-				&:after{
-					content: '';
-					position: absolute;
-		
+	.center{
+	}
+	.logotype{
+		font-weight: bold;
+	}
+	.btn{
+		position: relative;
+		text-decoration: none;
+		color: black;
+		margin: 0 0 6px 20px;
+		font-weight: bold;
+	
+		&:hover{
 
-					bottom: 0;
-					left: 0;
-					width: 100%;
-					border-bottom: 1px solid #97c89a;
+			&:after{
+				content: '';
+				position: absolute;
+	
 
-				}
-				
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				border-bottom: 1px solid #97c89a;
 			}	
-			
-			&:nth-child(1){
-				padding: 0;
-			}
-			&:nth-child(5){
-				margin: 0 0 0 53px;
-			}
+		}	
+		
+		&:nth-child(1){
+			padding: 0;
 		}
-		
-		
-
-		
-
-		
-
+		&:nth-child(5){
+			margin: 0 0 0 53px;
+		}
+	}		
 }
 
 .main{
-	padding-top: 184px;
+	border-top: 1px;
+
 }
 .gradient {
+	padding-top: 184px;
 	background: linear-gradient(to top right, #267ebe, #6dd5ed);
 		
 }
-.wrapper1{
-	max-width: 1200px;
-	margin: 0 auto;
-	max-width: 1200px;
-	padding: 0 22px;
+
+.main_colortext{
+	color: #ffffff;
+	margin-bottom: 80px;
+	font-size: 60px;
 	
-
-	.main_colortext{
-		color: #ffffff;
-		margin-bottom: 80px;
-		font-size: 60px;
-		
-	}
-
 }
+
 .my-row{
 	.row-flex();
 }
 
 .feedback{
 
-
-	&-card{
-		min-width: 372px;	
+	&-card{	
 		background-color: #ffffff;
 		border-radius: 10px;
 		margin-bottom: 45px;
@@ -113,9 +104,9 @@ header{
 		padding-bottom: 75px;
 		.col();
 		.size(4);
-		.size-md(4);
+		.size-md(6);
 		.size-sm(6);
-		.size-xs(10);
+		.size-xs(12);
 
 		&__face{
 			margin: 68px 0;
@@ -130,4 +121,67 @@ header{
 	}
 }
 
+.screen{
+	height:100vh;
+}
 
+.features{
+	text-align: center;
+	margin-bottom: 36px;
+}
+
+.centerP{
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+	margin-bottom: 46px;	
+}
+
+.advantages{
+	display:flex;
+	.row-flex();
+
+	&-li{
+		list-style-type: none;
+		padding-top:115px;
+		text-align: center;
+		padding-bottom:14px;
+		.col();
+		.size(3);
+		.size-md(6);
+		.size-sm(6);
+		.size-xs(12);
+		position: relative;
+
+		&+li{
+			border-left: 1px solid #dddddd;
+		}
+
+			&:before{
+				content: '';
+				background-image: url(../img/noun_Coffee.png);
+				background-color: #eaf4eb;
+				background-repeat: no-repeat;
+				background-position: center;
+				width:55px;
+				height: 55px;
+				position: absolute;
+				top: 40%;
+				left: 50%;
+				margin-top:  -(55px / 2);
+				margin-left: -(55px / 2);
+				border-radius: 50%;
+			}
+
+			&__2:before{
+				background-image: url(../img/noun_muffin.png)
+
+			}
+			&__3:before{
+				background-image: url(../img/noun_wifi.png)
+			}
+			&__4:before{
+				background-image: url(../img/noun_Sofa.png)
+			}
+		}
+	}
