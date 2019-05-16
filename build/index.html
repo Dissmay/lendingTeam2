@@ -7,7 +7,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="favicon.png">
-    <title> card </title>
+    <title> card</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <!-- HTML5 shim and Respond.js-->
     <!-- [if lt IE 9]>
@@ -18,21 +19,31 @@
   <body>
     <header class="header">
       <nav class="wrapper header-navigation">
-        <p class="logotype center">CoffePlanet</p>
+        <a href="index.html" class="logotype center">
+          <img src="img/CoffeePlanet.png" alt="CoffeePlanet logotype" class="logotype">
+        </a>
         <nav class="menu center">
-          <a href="#" class="btn">Menu</a>
-          <a href="#" class="btn">About</a>
-          <a href="#" class="btn">Features</a>
-          <a href="#" class="btn">Contacts</a>
-          <a href="#" class="btn">+1 253 867-54-13</a>
+          <a href="#" class="navigation__a">Menu</a>
+          <a href="#" class="navigation__a">About</a>
+          <a href="#" class="navigation__a">Features</a>
+          <a href="#" class="navigation__a">Contacts</a>
+          <a href="#" class="navigation__a">+1 253 867-54-13</a>
         </nav>
       </nav>
     </header>
-    <main class="img"></main>
-    <main class="main ">
+    <main class="main">
+      <div class="first-screen">
+        <div class="wrapper">
+          <p class="slogan__text"> More than simple coffee </p>
+          <p class="slogan__btns">
+            <a href="#" class="btn slogan__btn hov">Book a table</a>
+            <a href="#" class="btn slogan__btn slogan__btn_white">Watch video</a>
+          </p>
+        </div>
+      </div>
       <section class="gradient">
         <div class="wrapper">
-          <h1 class="main_colortext">Что говорят о нас клиенты?</h1>
+          <h1 class="feedback_colortext">Что говорят о нас клиенты?</h1>
           <div class="my-row">
             <div class="feedback-card">
               <img src="img/card1.png" alt="face1" class="feedback-card__face">
