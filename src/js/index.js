@@ -21,7 +21,8 @@
  	var sweetsTab = document.querySelector('#sweetsTab');
  	var snacksTab = document.querySelector('#snacksTab');
  	
-	coffeeTab.addEventListener('click', function(){
+	coffeeTab.addEventListener('click', function(e){
+			e.preventDefault();
 	 		coffeeTab.classList.add('active');
 	 		sweetsTab.classList.remove('active');
 	 		snacksTab.classList.remove('active');
@@ -31,7 +32,8 @@
 	 	});
 
 
- 	sweetsTab.addEventListener('click', function(){
+ 	sweetsTab.addEventListener('click', function(e){
+ 		e.preventDefault();
  		sweetsTab.classList.add('active');
  		coffeeTab.classList.remove('active');
  		snacksTab.classList.remove('active');
@@ -43,7 +45,8 @@
 
  	
 
- 	snacksTab.addEventListener('click', function(){
+ 	snacksTab.addEventListener('click', function(e){
+ 		e.preventDefault();
  		snacksTab.classList.add('active');
  		sweetsTab.classList.remove('active');
  		coffeeTab.classList.remove('active');
