@@ -22,7 +22,7 @@
         <a href="index.html" class="logotype center">
           <img src="img/CoffeePlanet.png" alt="CoffeePlanet logotype" class="logotype">
         </a>
-        <nav class="menu center">
+        <nav id="menuUp" class="menu center">
           <a href="#menu" class="navigation__a">Menu</a>
           <a href="#about" class="navigation__a">About</a>
           <a href="#features" class="navigation__a">Features</a>
@@ -39,8 +39,8 @@
         <div class="wrapper">
           <p class="slogan__text"> More than simple coffee </p>
           <p class="slogan__btns">
-            <a href="#" class="btn slogan__btn hov">Book a table</a>
-            <a href="#" class="btn slogan__btn slogan__btn_white">Watch video</a>
+            <a href="#book" class="btn slogan__btn hov btn_modal">Book a table</a>
+            <a href="#video" class="btn slogan__btn slogan__btn_white btn_modal">Watch video</a>
           </p>
         </div>
       </div>
@@ -139,7 +139,7 @@
             <div class="slider__slide">
               <img src="img/slider_1.png" alt="CoffePlanet" class="slider__img">
             </div>
-            <div class="slider__slide d-n">
+            <div class="slider__slide">
               <img src="img/slider_2.png" alt="CoffePlanet" class="slider__img">
             </div>
           </figure>
@@ -152,7 +152,7 @@
         <p class="info__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
         <p class="info__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit </p>
         <p class="info__p clear"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in </p>
-        <button class="info__btn"> Book a table in our cozy coffee shop </button>
+        <a href="#book" class="info__btn"> Book a table in our cozy coffee shop </a>
       </article>
       <section id="features" class="wrapper screen">
         <h2 class="features"> Our features </h2>
@@ -218,6 +218,32 @@
     <footer class="footer wrapper">
       <p class="footer-copyright"> Copyright 2019 CoffeePlanet </p>
     </footer>
-    <script src="../js/index.js"></script>
+    <div class="modal-container  d-n">
+      <div class="wrapper modal-container_main">
+        <button class="closer">
+          <span class="visually-hidden">Closer</span> s </button>
+        <section id="book" class="modal modal-book ">
+          <h2 class="modal-book__h">Book a table </h2>
+          <p class="modal-book__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+          <form action="#" class="modal-book__form ">
+            <input type="text" class="modal-book__input" placeholder="Name">
+            <input type="text" class="modal-book__input" placeholder="Phone">
+            <button class="modal-book__btn btn" type="submit">Send</button>
+          </form>
+        </section>
+        <section id="video" class="modal modal-video__width">
+          <div class="modal-video__height">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nvJvyuBHDqI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="btn-menu">
+      <a href="#menuUp" class="btn-menu__a">
+      </a>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
