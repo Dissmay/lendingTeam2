@@ -417,10 +417,11 @@ button:active{
 	text-align: right;
 	margin-bottom: 40px;
 	width:50%;
-	.media(939px,{
+	.media(940px,{
 		float: none;
 		text-align:center;
 		margin: 0 auto;
+		width:70%
 		});
 	&__btn{
 		border: transparent;
@@ -798,7 +799,7 @@ button:active{
 		width:100%;
 		padding: 67px 100px;
 		.media(950px, {
-			padding:0;
+			padding:10px;
 			})
 		
 	}
@@ -823,14 +824,12 @@ button:active{
 		position:relative;
 		border: none;
 
-		&:before, &:after, &:hover{
+		&:before, &:after, {
 			content:'';
 			display:block;
 			position: absolute;
 			min-width: 30px;
 			min-height: 40px;
-			transform:scaleX(1.8);
-			text-decoration:none;
 			border-bottom: 1px solid @green_line;
 			outline:none;
 		};
